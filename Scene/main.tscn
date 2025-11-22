@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b821myv7hqira"]
+[gd_scene load_steps=4 format=3 uid="uid://b821myv7hqira"]
 
 [ext_resource type="PackedScene" uid="uid://de78u6sepvyir" path="res://Pong/Scene/ball.tscn" id="1_f6udf"]
 [ext_resource type="PackedScene" uid="uid://bjyxc71hu4myb" path="res://Pong/Scene/player_1.tscn" id="2_yne1g"]
+[ext_resource type="PackedScene" uid="uid://bnf5jmpxk180y" path="res://Pong/Scene/player_2.tscn" id="3_1c83y"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -35,3 +36,6 @@ position = Vector2(600, 400)
 
 [node name="Player1" parent="." instance=ExtResource("2_yne1g")]
 position = Vector2(-1, 300)
+
+[node name="Player2" parent="." instance=ExtResource("3_1c83y")]
+position = Vector2(1162, 296)

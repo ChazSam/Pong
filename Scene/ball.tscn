@@ -3,13 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://bl5ye1jmlkf7x" path="res://Pong/Assets/Ball.png" id="1_c2f4g"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_41u45"]
-radius = 27.0
+radius = 22.022715
 
 [node name="Ball" type="RigidBody2D"]
 gravity_scale = 0.0
 
 [node name="Icon" type="Sprite2D" parent="."]
-scale = Vector2(0.05, 0.05)
+scale = Vector2(0.04, 0.04)
 texture = ExtResource("1_c2f4g")
 region_rect = Rect2(8.575, 0, 121.125, 29.465)
 

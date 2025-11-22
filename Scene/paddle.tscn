@@ -1,9 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://cxtytlg7yllvt"]
+[gd_scene load_steps=3 format=3 uid="uid://cxtytlg7yllvt"]
+
+[ext_resource type="Script" uid="uid://d4j6sst1dmvo8" path="res://Pong/Scene/paddle.gd" id="1_h6ol4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v4vh1"]
 size = Vector2(40, 205)
 
 [node name="Paddle" type="CharacterBody2D"]
+script = ExtResource("1_h6ol4")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 40.0
