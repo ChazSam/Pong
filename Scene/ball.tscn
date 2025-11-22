@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://de78u6sepvyir"]
+
+[ext_resource type="Texture2D" uid="uid://bl5ye1jmlkf7x" path="res://Pong/Assets/Ball.png" id="1_c2f4g"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_41u45"]
+radius = 27.0
+
+[node name="Ball" type="RigidBody2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_c2f4g")
+region_rect = Rect2(8.575, 0, 121.125, 29.465)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_41u45")
