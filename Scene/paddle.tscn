@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxtytlg7yllvt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v4vh1"]
+size = Vector2(40, 205)
+
+[node name="Paddle" type="CharacterBody2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 205.0
+
+[node name="Line2D" type="Line2D" parent="ColorRect"]
+points = PackedVector2Array(38, 203, 38, 2, 2, 2, 2, 203)
+closed = true
+width = 4.0
+default_color = Color(0.46618086, 0.4661808, 0.4661808, 1)
+sharp_limit = 2.03
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(20, 102.5)
+shape = SubResource("RectangleShape2D_v4vh1")

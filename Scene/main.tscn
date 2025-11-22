@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b821myv7hqira"]
+[gd_scene load_steps=3 format=3 uid="uid://b821myv7hqira"]
 
 [ext_resource type="PackedScene" uid="uid://de78u6sepvyir" path="res://Pong/Scene/ball.tscn" id="1_f6udf"]
+[ext_resource type="PackedScene" uid="uid://bjyxc71hu4myb" path="res://Pong/Scene/player_1.tscn" id="2_yne1g"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -21,5 +22,16 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 color = Color(0, 0.25882354, 0.41960785, 1)
 
+[node name="Line2D" type="Line2D" parent="ColorRect"]
+points = PackedVector2Array(1200, 0, 1200, 800, 0, 800, 0, 0)
+closed = true
+
+[node name="Line2D2" type="Line2D" parent="ColorRect"]
+position = Vector2(2, -4)
+points = PackedVector2Array(598, 5, 598, 805)
+
 [node name="Ball" parent="." instance=ExtResource("1_f6udf")]
 position = Vector2(600, 400)
+
+[node name="Player1" parent="." instance=ExtResource("2_yne1g")]
+position = Vector2(-1, 300)
