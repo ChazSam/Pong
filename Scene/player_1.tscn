@@ -1,5 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bjyxc71hu4myb"]
+[gd_scene load_steps=3 format=3 uid="uid://bjyxc71hu4myb"]
 
 [ext_resource type="PackedScene" uid="uid://cxtytlg7yllvt" path="res://Pong/Scene/paddle.tscn" id="1_44ikr"]
+[ext_resource type="Script" uid="uid://cag28kn5hdr6e" path="res://Pong/Scene/player_1.gd" id="2_jv682"]
 
 [node name="Player1" instance=ExtResource("1_44ikr")]
+script = ExtResource("2_jv682")

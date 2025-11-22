@@ -1,1 +1,2 @@
+class_name Paddle
 extends CharacterBody2D
