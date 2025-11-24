@@ -5,4 +5,3 @@
 
 [node name="Player1" instance=ExtResource("1_44ikr")]
 script = ExtResource("2_jv682")
-movement_speed = 300.0
