@@ -5,13 +5,13 @@
 [ext_resource type="PackedScene" uid="uid://bnf5jmpxk180y" path="res://Pong/Scene/player_2.tscn" id="3_1c83y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1c83y"]
-size = Vector2(1210, 26)
+size = Vector2(1210, 65.151825)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w3ay2"]
-size = Vector2(19.8125, 790)
+size = Vector2(35.8125, 791)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mktv7"]
-size = Vector2(18, 790)
+size = Vector2(46, 790)
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -49,30 +49,49 @@ position = Vector2(10, 300)
 [node name="Player2" parent="." instance=ExtResource("3_1c83y")]
 position = Vector2(1150, 300)
 
-[node name="Top" type="StaticBody2D" parent="."]
+[node name="Borders" type="StaticBody2D" parent="."]
 position = Vector2(1370, 824)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Top"]
-position = Vector2(-770, -832.1518)
+[node name="Top" type="CollisionShape2D" parent="Borders"]
+position = Vector2(-770, -853.1518)
 shape = SubResource("RectangleShape2D_1c83y")
 
-[node name="Bottom" type="StaticBody2D" parent="."]
-position = Vector2(1370, 1640)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bottom"]
-position = Vector2(-770, -832.1518)
+[node name="Bottom" type="CollisionShape2D" parent="Borders"]
+position = Vector2(-770, 3.4240723)
 shape = SubResource("RectangleShape2D_1c83y")
 
 [node name="LeftGoal" type="StaticBody2D" parent="."]
 position = Vector2(39, 812)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftGoal"]
-position = Vector2(-44.09375, -412)
+position = Vector2(-52.09375, -412.5)
 shape = SubResource("RectangleShape2D_w3ay2")
 
 [node name="RightGoal" type="StaticBody2D" parent="."]
 position = Vector2(1247, 812)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightGoal"]
-position = Vector2(-43, -412)
+position = Vector2(-29, -412)
 shape = SubResource("RectangleShape2D_mktv7")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PlayerScore" type="Label" parent="CanvasLayer"]
+offset_left = 438.0
+offset_top = 35.0
+offset_right = 473.0
+offset_bottom = 104.0
+theme_override_font_sizes/font_size = 50
+text = "0"
+
+[node name="PlayerScore2" type="Label" parent="CanvasLayer"]
+offset_left = 704.0
+offset_top = 35.0
+offset_right = 739.0
+offset_bottom = 104.0
+theme_override_font_sizes/font_size = 50
+text = "0"
+
+[node name="BallTimer" type="Timer" parent="."]
+one_shot = true
+autostart = true
