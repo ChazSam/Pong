@@ -9,7 +9,7 @@
 size = Vector2(1210, 65.151825)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w3ay2"]
-size = Vector2(35.8125, 791)
+size = Vector2(62.8125, 791)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mktv7"]
 size = Vector2(46, 790)
@@ -43,13 +43,16 @@ position = Vector2(2, -4)
 points = PackedVector2Array(598, 5, 598, 805)
 
 [node name="Ball" parent="." instance=ExtResource("1_f6udf")]
+visible = false
 position = Vector2(600, 400)
 
 [node name="Player1" parent="." instance=ExtResource("2_yne1g")]
-position = Vector2(10, 300)
+position = Vector2(30, 300)
+motion_mode = 0
 
 [node name="Player2" parent="." instance=ExtResource("3_1c83y")]
-position = Vector2(1150, 300)
+position = Vector2(1130, 300)
+motion_mode = 0
 
 [node name="Borders" type="StaticBody2D" parent="."]
 position = Vector2(1370, 824)
@@ -66,7 +69,7 @@ shape = SubResource("RectangleShape2D_1c83y")
 position = Vector2(39, 812)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftGoal"]
-position = Vector2(-52.09375, -412.5)
+position = Vector2(-65.59375, -412.5)
 shape = SubResource("RectangleShape2D_w3ay2")
 
 [node name="RightGoal" type="StaticBody2D" parent="."]

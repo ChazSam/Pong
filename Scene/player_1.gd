@@ -7,9 +7,6 @@ func get_input():
 
 func _physics_process(_delta: float) -> void:
 	#position.y = clamp(position.y, 0, screen_size.y - $ColorRect.size.y)
-	
-
-	
 	get_input()
 	move_and_slide()
 	

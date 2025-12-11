@@ -7,6 +7,7 @@ size = Vector2(40, 205)
 
 [node name="Paddle" type="CharacterBody2D"]
 collision_mask = 2
+motion_mode = 1
 script = ExtResource("1_h6ol4")
 
 [node name="ColorRect" type="ColorRect" parent="."]
